@@ -9,10 +9,26 @@
     <img [src]="Seturl" width="400px" height="400px">
   </div>
 </div>
-<div class="container mt-4">
-  <h3>{{ texto }}</h3>
-  <br>
-  <button class="btn btn-primary" (click)="cambiarTexto()" >Click Me</button>
+<div class="container">
+  <div class="row">
+    <h3>Listado de estudiantes</h3>
+  </div>
+
+  <table class="table mt-4">
+    <thead>
+      <th>Nro</th>
+      <th>Nombre</th>
+      <th>Estado</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let estudiante of listEstudiantes ; let i = index">
+        <td>{{i + 1}}</td>
+        <td>{{estudiante.nombre}}</td>
+        <td>{{estudiante.estado}}</td>
+      </tr>
+    </tbody>
+  </table>
 
 </div>
+
 

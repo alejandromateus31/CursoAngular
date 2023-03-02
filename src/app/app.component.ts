@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- nombre = "Diego"
+
+
+
+ listEstudiantes : any[] = [
+  { nombre : 'Diego Mateus' , estado : 'Promocion'},
+  { nombre : 'Lucas  Peres' , estado : 'Regulaer'},
+  { nombre : 'Juan Garcia' , estado : 'Regulaer'},
+];
+ nombre = "Diego";
  textoPlaceHolder = 'Escriba algo aqui';
  deshabilitado = true;
  Seturl ='https://uploads.toptal.io/blog/image/125413/toptal-blog-image-1518523133236-d2bc894552c77f954f1e5ce48da6604d.png';
